@@ -1,0 +1,30 @@
+{
+  "name": "challengea",
+  "version": "1.0.0",
+  "description": "Software automation challenge A",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "cypress": "^10.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "e2e": "npx cypress open",
+    "headless": "npx cypress run -b chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepBaseDir": "cypress/e2e",
+    "stepDefinitions": "cypress/e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoJOFernandes/challengeA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoJOFernandes/challengeA/issues"
+  },
+  "homepage": "https://github.com/DiegoJOFernandes/challengeA#readme"
+}

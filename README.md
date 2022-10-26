@@ -7,15 +7,16 @@ Software automation challenge A
 ```
 npm i
 ```
-Para executar os testes:
+2. Para executar os testes em modo headless:
 ```
 npm run headless
 ```
-Para executar os testes no modo interativo:
+3. Para executar os testes no modo interativo:
 ```
 npm run e2e
+```
 
-### Discovery
+## Cenários
 
 | Register                                     |
 | -------------------------------------------- |

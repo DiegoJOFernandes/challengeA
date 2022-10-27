@@ -1,5 +1,4 @@
 const { defineConfig } = require("cypress");
-
 const cucumber = require('cypress-cucumber-preprocessor').default
 
 module.exports = defineConfig({
@@ -11,6 +10,7 @@ module.exports = defineConfig({
     specPattern: "**/*.feature",
     baseUrl: "http://sampleapp.tricentis.com/101/app.php",
     defaultCommandTimeout: 20000,
-    pageLoadTimeout: 40000
+    pageLoadTimeout: 40000,
+    chromeWebSecurity: true
   },
 });

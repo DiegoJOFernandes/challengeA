@@ -9,8 +9,8 @@ Funcionalidade: Desafio Accenture
     E preenche o formulário na aba "Enter Vehicle Data"
     E preenche o formulário na aba "Enter Insurant Data"
     E preenche o formulário na aba "Enter Product Data"
-    E preenche o formulário na aba "Select Price Option"
-    E preenche o formulário na aba "Send Quote"
-    Quando pressiona o botão Enviar
-    Então devo visualizar a mensagem "Enviando e-mail com sucesso!"
+    # E preenche o formulário na aba "Select Price Option"
+    # E preenche o formulário na aba "Send Quote"
+    # Quando pressiona o botão Enviar
+    # Então devo visualizar a mensagem "Enviando e-mail com sucesso!"
      

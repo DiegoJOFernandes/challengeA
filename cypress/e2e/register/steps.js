@@ -1,4 +1,4 @@
-import register from '../../support/pages/register';
+import register from '../../support/register';
 
 Given(/^que o usuário acessa o site$/, () => {
 	register.visitPage()
@@ -6,6 +6,7 @@ Given(/^que o usuário acessa o site$/, () => {
 
 When(/^preenche o formulário na aba "([^"]*)"$/, (tabName) => {
 	register.checkInitialState(tabName)
+	register.fillVehicleData()
 });
 
 When(/^preenche o formulário na aba "([^"]*)"$/, (tabName) => {

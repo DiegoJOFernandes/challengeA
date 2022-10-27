@@ -1,7 +1,7 @@
-name: Cypress Tests
+name: run tests e2e
 
 on: [push]
-
+  
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: test e2e website
         uses: cypress-io/github-action@v4
         with:
-          build: npm i
+          build: npm install
           start: npm run headless

@@ -3,7 +3,6 @@
 const { faker } = require('@faker-js/faker')
 
 class SendQuoteTab {
-
   fillQuoteData() {
     const generatePassword = faker.internet.password(20)
     cy.get('#finished-container').should('be.visible')
@@ -26,7 +25,6 @@ class SendQuoteTab {
     cy.get('h2').should('contain.text', 'Sending e-mail success!')
     cy.get('.confirm').contains('OK').click()
   }
-
 }
 
 export default new SendQuoteTab()

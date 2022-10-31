@@ -1,7 +1,6 @@
 /// <reference types='cypress' />
 
-class AssertFieldsForm {  
-
+class AssertFieldsForm {
   checkInitialState(tabName) {
     this.verifyTabAccess(tabName)
     this.checkIfInputFieldsIsEmpty()
@@ -40,7 +39,6 @@ class AssertFieldsForm {
       mandatoryField
     )
   }
- 
 }
 
 export default new AssertFieldsForm()

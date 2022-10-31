@@ -5,7 +5,7 @@ class vehicleDataTab {
     cy.visit('/101/app.php')
   }
 
-  assertVisitPage(){
+  assertVisitPage() {
     cy.title().should('deep.equal', 'Enter Vehicle Data')
     cy.url().should('be.eq', 'http://sampleapp.tricentis.com/101/app.php')
   }

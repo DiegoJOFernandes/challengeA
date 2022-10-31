@@ -51,3 +51,7 @@ When(/^pressing the Submit button$/, () => {
 Then(/^check the message 'Sending e-mail success!'$/, () => {
   sendQuoteTab.assertEmailSentSuccessfully()
 })
+
+Given(/^user accesses the insurance claim form$/, () => {
+	sendQuoteTab.fillQuoteData()
+})

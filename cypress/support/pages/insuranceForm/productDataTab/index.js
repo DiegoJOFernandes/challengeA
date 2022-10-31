@@ -3,11 +3,12 @@
 const { faker } = require('@faker-js/faker')
 
 class ProductDataTab {
-
   fillProductData() {
     const futureDate = faker.date.future(10)
     cy.get('#startdate').type(
-      `${futureDate.getMonth()}/${futureDate.getDate()}/${futureDate.getFullYear()}`
+      `${
+        futureDate.getMonth() + 1
+      }/${futureDate.getDate()}/${futureDate.getFullYear()}`
     )
     cy.get('#insurancesum').select('3000000').should('have.value', '3000000')
     cy.get('#meritrating').select('Malus 17').should('have.value', 'Malus 17')
@@ -23,7 +24,6 @@ class ProductDataTab {
   clickNextSelectPriceOption() {
     cy.get('#nextselectpriceoption').click()
   }
-
 }
 
 export default new ProductDataTab()

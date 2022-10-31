@@ -5,7 +5,7 @@ Cypress.Commands.add('prepareVehicleData', () => {
   const data = {
     cylinderCapacity: faker.random.numeric(3).toString(),
     enginePerformance: faker.random.numeric(3).toString(),
-    dateOfManufacture: `${completeDate.getMonth()}/${completeDate.getDate()}/${completeDate.getFullYear()}`,
+    dateOfManufacture: `${completeDate.getMonth() +1}/${completeDate.getDate()}/${completeDate.getFullYear()}`,
     numberOfSeats: faker.datatype.number({ min: 1, max: 9 }).toString(),
     numberOfSeatsMotorcycle: faker.datatype
       .number({ min: 1, max: 3 })

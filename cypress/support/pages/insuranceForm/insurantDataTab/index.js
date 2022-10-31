@@ -8,7 +8,7 @@ class InsurantDataTab {
     cy.get('#lastname').type(faker.name.lastName())
     const birthDate = faker.date.birthdate({ min: 18, max: 65, mode: 'age' })
     cy.get('#birthdate').type(
-      `${birthDate.getUTCMonth()}/${birthDate.getDate()}/${birthDate.getFullYear()}`
+      `${birthDate.getMonth() + 1}/${birthDate.getDate()}/${birthDate.getFullYear()}`
     )
     cy.get('[type="radio"]').check('Male', { force: true }).should('be.checked')
     cy.get('#streetaddress').type(faker.address.streetAddress(true))

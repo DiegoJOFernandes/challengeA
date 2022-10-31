@@ -4,6 +4,8 @@ Software automation challenge A
 <div justify-content="space-between" align-items="center">
     <img src="https://seekicon.com/free-icon-download/cypress_1.svg" width="50" alt= "Cypress"/>
     <img src="https://seekicon.com/free-icon-download/javascript_3.svg" width="50" alt="Javascript"/>
+    <img src="https://seekicon.com/free-icon/cucumber_1.svg" width="50" alt="Cucumber"/>
+    <img src="https://seekicon.com/free-icon/prettier_2.svg" width="50" alt="Prettier"/>
 </div>
 
 ## Configuração
@@ -52,12 +54,16 @@ qa-amercado-site/
     ├──cypress.config.js
     └──mobile.config.js
 ````
+
 ## Fontes e plugins
 
 - [Documentação do Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+- [Documentação do Cucumber](https://cucumber.io/docs/gherkin/reference/)
+- [Documentação do Prettier](https://prettier.io/docs/en/index.html)
 
 ## Cenários
 
 | Register                                     |
 | -------------------------------------------- |
 | User fills out insurance claim form          |
+|                                              |

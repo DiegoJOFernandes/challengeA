@@ -8,9 +8,16 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     specPattern: "**/*.feature",
-    baseUrl: "http://sampleapp.tricentis.com/101/app.php",
+    baseUrl: "http://sampleapp.tricentis.com",
+    viewportWidth: 1440,
+    viewportHeight: 900,
+    watchForFileChanges: false,
     defaultCommandTimeout: 20000,
     pageLoadTimeout: 40000,
-    chromeWebSecurity: true
-  },
+    chromeWebSecurity: false,
+  },  
+  retries: {
+    runMode: 2,
+    openMode: 1
+  }
 });

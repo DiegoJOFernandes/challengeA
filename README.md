@@ -4,8 +4,8 @@ Software automation challenge A
 <div justify-content="space-between" align-items="center">
     <img src="https://seekicon.com/free-icon-download/cypress_1.svg" width="50" alt= "Cypress"/>
     <img src="https://seekicon.com/free-icon-download/javascript_3.svg" width="50" alt="Javascript"/>
-    <img src="https://seekicon.com/free-icon/cucumber_1.svg" width="50" alt="Cucumber"/>
-    <img src="https://seekicon.com/free-icon/prettier_2.svg" width="50" alt="Prettier"/>
+    <img src="https://seekicon.com/free-icon-download/cucumber_1.svg" width="50" alt="Cucumber"/>
+    <img src="https://seekicon.com/free-icon-download/prettier_2.svg" width="50" alt="Prettier"/>
 </div>
 
 ## Configuração
